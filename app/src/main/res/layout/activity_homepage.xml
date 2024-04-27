@@ -103,13 +103,10 @@
                     android:text="Emplacement"
                     android:textColor="@color/white"
                     android:textSize="20dp" />
-
-
             </LinearLayout>
-
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="74dp"
+                android:layout_height="520dp"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="30dp">
@@ -130,7 +127,6 @@
 
                 </LinearLayout>
             </RelativeLayout>
-
         </LinearLayout>
 
     </ScrollView>
