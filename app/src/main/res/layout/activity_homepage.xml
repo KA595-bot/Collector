@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:scrollbars="none"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".homepage">
@@ -13,8 +14,6 @@
         android:background="@color/dirty_white"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp">
-
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -30,9 +29,11 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:layout_marginStart="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
                     android:layout_marginTop="20dp"
-                    android:layout_marginEnd="30dp">
+                    >
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="40dp"
@@ -76,9 +77,8 @@
 
                     <EditText
                         android:id="@+id/editTextText2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="121dp"
+                        android:layout_width="219dp"
+                        android:layout_height="41dp"
                         android:background="@drawable/background_search"
                         android:drawableEnd="@drawable/search"
                         android:ems="10"
@@ -88,8 +88,10 @@
                         android:textColor="@color/dirty_green"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.111"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -97,9 +99,9 @@
                     android:id="@+id/textView3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="30dp"
+                    android:layout_marginStart="40dp"
                     android:layout_marginTop="32sp"
-                    android:layout_marginEnd="30dp"
+                    android:layout_marginEnd="40dp"
                     android:text="Emplacement"
                     android:textColor="@color/white"
                     android:textSize="20dp" />
@@ -123,6 +125,6 @@
 
             </LinearLayout>
         </LinearLayout>
-
     </ScrollView>
+
 </RelativeLayout>
